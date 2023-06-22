@@ -1,0 +1,149 @@
+//container
+.container {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+//section
+.section.center {
+    text-align: center;
+}
+.section {
+    padding: 120px 0;
+
+    > h3 {
+        font-size: 50px;
+    }
+    > p {
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 60px;
+    }
+}
+
+//cont__title
+.cont__Title > h2 {
+    text-align: center;
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5%;
+}
+
+
+//background
+.bg-blue {
+    background-color: var(--bg_section);
+}
+
+//button
+.button-blue {
+    @include button(#4857EC, #fff)
+}
+.button-red {
+    @include button(#ff3344, #fff)
+}
+.button-green {
+    @include button(#00c183, #fff)
+}
+
+//icon
+.icon-bg1 {
+    @include icon(#d3f6ea,url(../../images/intro/introtextType01_01.svg))
+}
+.icon-bg2 {
+    @include icon(#EDD0A6,url(../../images/intro/introtextType01_02.svg))
+}
+.icon-bg3 {
+    @include icon(#F8C6F3 ,url(../../images/intro/introtextType01_03.svg))
+}
+.icon-bg4 {
+    @include icon(#A9F5C3,url(../../images/intro/introtextType01_04.svg))
+}
+.icon-bg5 {
+    @include icon(#C4BAFF,url(../../images/intro/introtextType01_05.svg))
+}
+.icon-bg6 {
+    @include icon(#F9C6C6,url(../../images/intro/introtextType01_06.svg))
+}
+// blind
+.blind {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+//ir
+.ir {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+//skip
+#skip {
+    position: relative;
+    z-index: 100000;
+}
+#skip a {
+    background-color: var(--color_body);
+    color: #fff;
+    position: absolute;
+    padding: 20px 40px;
+    left: -400px;
+    top: 5px;
+}
+#skip a:active,
+#skip a:focus {
+    left: 5px;
+}
+
+
+
+
+
+$interval: (
+    0:0,
+    10:10px,
+    20:20px,
+    30:30px,
+    40:40px,
+    50:50px,
+    60:60px,
+    70:70px,
+    80:80px,
+    90:90px,
+);
+// mb반복문으로 만들기
+@each $value, $size in $interval {
+    .mb#{$value} {
+        margin-bottom: $size !important;
+    }
+}
+
+// mt반복문으로 만들기
+@each $value, $size in $interval {
+    .mt#{$value} {
+        margin-top: $size !important;
+    }
+}
+
+// mr반복문으로 만들기
+@each $value, $size in $interval {
+    .mr#{$value} {
+        margin-right: $size !important;
+    }
+}
+
+// ml반복문으로 만들기
+@each $value, $size in $interval {
+    .ml#{$value} {
+        margin-left: $size !important;
+    }
+}
