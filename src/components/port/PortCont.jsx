@@ -73,7 +73,7 @@ const PortCont = () => {
   return (
     <div className="port__inner">
       <div className="port__img">
-        <img src="../../assets/images/port/AlanTuring.jpg" alt="dd" />
+        <img src="../../assets/images/port/AlanTuring.jpg" alt="dddd" />
       </div>
     </div>
   );
