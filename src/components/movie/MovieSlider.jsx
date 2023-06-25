@@ -39,7 +39,6 @@ const MovieSlider = ({ movies }) => {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
         modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
       >

@@ -1,78 +1,110 @@
 .port__wrap {
-    h3 {
-        margin-bottom: 10px;
-    }
-    p {}
+  h3 {
+    margin-bottom: 10px;
+  }
+  p {
+  }
 }
 .port__inner {
-   
-    .port__btn {
-        ul {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-            li {
+  .port__btn {
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      li {
+        a {
+          border: 1px solid #8da7e9;
+          padding: 20px 50px;
+          margin-right: 10px;
+          background: #d9e4ff;
+          border-radius: 50px;
 
-                a {
-                    border: 1px solid #8da7e9;
-                    padding: 20px 50px;
-                    margin-right: 10px;
-                    background: #D9E4FF;
-                    border-radius: 50px;
-                    
-                    &:hover {
-                        background-color: darken(#D9E4FF, 10%);
-                    }
-                }
-                
-
-            }
+          &:hover {
+            background-color: darken(#d9e4ff, 10%);
+          }
         }
+      }
     }
-    .port__cont {
-        @include flex-between;
+  }
+  .port__cont {
+    @include flex-between;
 
-        flex-wrap: wrap;
-        .port {
-            width: 32.222%;
-            margin-top: 30px;
-            .port__header {
-                img {
-                    width: 100%;
-                }
-            }
-            .port__body {
-                display: flex;
-                margin-top: 8px;
-                > span {
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    background-color: #ce7f7f;
-                    overflow: hidden;
-                    img {
-                        margin-top: 8px;
-                        width: 50px;
-                        height: 50px;
-
-                    }
-                }
-                .desc {
-                    padding-left: 10px;
-                    text-align: left;
-                    > h4 {
-                        font-size: 20px;
-                        line-height: 1.6;
-                    }
-                    > p {
-                        font-size: 16px;
-                        font-weight: 400;
-                        color: #2C3A4B;
-                    }
-                }
-
-            }
+    flex-wrap: wrap;
+    .port {
+      width: 32.222%;
+      margin-top: 30px;
+      .port__header {
+        img {
+          width: 100%;
         }
+      }
+      .port__body {
+        display: flex;
+        margin-top: 8px;
+        > span {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #ce7f7f;
+          overflow: hidden;
+          img {
+            margin-top: 8px;
+            width: 50px;
+            height: 50px;
+          }
+        }
+        .desc {
+          padding-left: 10px;
+          text-align: left;
+          > h4 {
+            font-size: 20px;
+            line-height: 1.6;
+          }
+          > p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #2c3a4b;
+          }
+        }
+      }
     }
+  }
+}
 
+.scientist__list {
+  margin-bottom: 40px;
+  h1 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  .port__desc {
+    display: flex;
+    justify-content: space-between;
+    img {
+      margin-right: 20px;
+    }
+    .scientist__desc__box {
+      padding: 20px;
+      position: relative;
+      .scientist__desc {
+        font-size: 20px;
+        line-height: 1.7;
+        display: block;
+        margin-bottom: 20px;
+      }
+      a {
+        display: inline-block;
+        position: absolute;
+        bottom: 30px;
+        right: 0;
+        padding: 10px 30px;
+        border-radius: 30px;
+        border: 2px solid #2c3a4b;
+        &:hover {
+          background-color: #2c3a4b;
+          color: #fff;
+        }
+      }
+    }
+  }
 }
