@@ -27,7 +27,7 @@ const MovieTag = ({ onSearch }) => {
     }
   }
   return (
-    <div className="movie__tag container jamsil">
+    <div className="movie__tag jamsil">
       <div>
         {movieTag.map((tag, index) => (
           <button onClick={btnClick} key={index}>

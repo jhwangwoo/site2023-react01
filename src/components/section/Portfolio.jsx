@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const portTitle = {
   title: "과학자 소개",
   desc: "과학자들은 지식의 산다리와 혁신의 선구자로, 인류의 이해를 넓히고 세계를 변화시키는 역할을 수행합니다.",
@@ -45,11 +46,11 @@ function PortDesc({ portImg, iconImg, title, desc }) {
   return (
     <div className="port">
       <figure className="port__header">
-        <img src={portImg} alt="배경" />
+        <img src={portImg} alt={title} />
       </figure>
       <div className="port__body">
         <span>
-          <img src={iconImg} alt="맴버" />
+          <img src={iconImg} alt={title} />
         </span>
         <div className="desc">
           <h4>{title}</h4>
@@ -69,7 +70,7 @@ const Portfolio = (props) => {
         <div className="port__btn">
           <ul>
             <li>
-              <a href="/port">더 보기</a>
+              <Link to="/port">더 보기</Link>
             </li>
           </ul>
         </div>

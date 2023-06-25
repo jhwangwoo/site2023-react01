@@ -10,7 +10,7 @@ const UnsplashTag = ({ onSearch }) => {
     onSearch(e.target.innerText);
   }
   return (
-    <div className="unsplash__tag container jamsil">
+    <div className="unsplash__tag jamsil container">
       <div>
         {unsplashTag.map((tag, index) => (
           <button onClick={btnClick} key={index}>

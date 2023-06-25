@@ -17,7 +17,7 @@ const YoutubeSearch = ({ onSearch }) => {
   };
 
   return (
-    <div className="youtube__search container">
+    <div className="youtube__search">
       <h2 className="blind">검색하기</h2>
       <input
         ref={inputRef}

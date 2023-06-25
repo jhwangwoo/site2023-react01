@@ -11,7 +11,7 @@ const YoutubeTag = ({ onSearch }) => {
     onSearch(e.target.innerText);
   }
   return (
-    <div className="youtube__tag container jamsil">
+    <div className="youtube__tag jamsil">
       <div>
         {youtubeTag.map((tag, index) => (
           <button onClick={btnClick} key={index}>

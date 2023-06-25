@@ -10,7 +10,11 @@ import "swiper/css/bundle";
 
 const UnsplashImg = ({ image }) => {
   return (
-    <a href={`https://unsplash.com/photos/${image.id}`} target="_blank">
+    <a
+      href={`https://unsplash.com/photos/${image.id}`}
+      target="_blank"
+      rel="noopener"
+    >
       <img src={image.urls.regular} alt={image.alt_description} />
     </a>
   );
