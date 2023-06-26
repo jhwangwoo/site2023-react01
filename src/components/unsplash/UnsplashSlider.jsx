@@ -12,8 +12,7 @@ const UnsplashImg = ({ image }) => {
   return (
     <a
       href={`https://unsplash.com/photos/${image.id}`}
-      target="_blank"
-      rel="noopener"
+      target="_blank" rel="noreferrer"
     >
       <img src={image.urls.regular} alt={image.alt_description} />
     </a>

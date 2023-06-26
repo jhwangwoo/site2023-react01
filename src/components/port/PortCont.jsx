@@ -69,7 +69,7 @@ const ScientistDesc = ({ portImg, link, title, desc }) => {
         <img src={portImg} alt={title} />
         <div className="scientist__desc__box">
           <span className="scientist__desc">{desc}</span>
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noreferrer">
             더 보기
           </a>
         </div>

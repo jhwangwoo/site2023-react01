@@ -2,7 +2,7 @@ import React from "react";
 
 const Contents = ({ children }) => {
   return (
-    <main id="main" role="main" className="container">
+    <main id="main" role="main">
       {children}
     </main>
   );
