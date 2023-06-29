@@ -25,7 +25,10 @@ const UnsplashPage = () => {
       redirect: "follow",
     };
 
-    fetch(requestOptions)
+    fetch(
+      "https://api.unsplash.com/photos?client_id=q_Cs549hvK1mONfcPtht4An0-5wms_SlpsGWUO0nCtA&per_page=30",
+      requestOptions
+    )
       .then((response) => response.json())
       .then((result) => setImages(result))
       .catch((error) => console.log("error", error));
